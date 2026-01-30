@@ -1,5 +1,8 @@
 # churn-prediction-api
+##What the model predicts:
+Probability of churn of the telecom users
 data set source: https://www.kaggle.com/code/bandiatindra/telecom-churn-prediction
+
 cleaned datafile after removing unused columns: cleaned_telco_churn 
 Columns removed: Customer_ID
 Trained ML model file: churn_model.pkl
@@ -10,5 +13,21 @@ Model evaluation:
 - At 0.5% threshold, this model has optimised results on recall, which is to identify as many churn users as possible as it is difficult to win back churned out users)
 # Fast API end point
 - https://churn-prediction-api-yjg8.onrender.com/predict
-- # One situation where model would fail
+- {
+  "data": {
+    "gender": "Female",
+    "SeniorCitizen": 0,
+    "Partner": "Yes",
+    "Dependents": "No",
+    "tenure": 12,
+    "MonthlyCharges": 70.5,
+    "TotalCharges": 845.0,
+    "InternetService": "Fiber optic",
+    "Contract": "Month-to-month",
+    "PaymentMethod": "Electronic check"
+  }
+}
+
+# One situation where the model would fail
+- When new features are introduced to the model, they are introduced whose past data has not been used to train the model. The model will not know how to use those new features to make predictions
   
