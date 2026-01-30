@@ -8,3 +8,7 @@ Model evaluation:
 - Recall: 79% (out of all the users who intend to churn, the model correctly identifed 79% of them)
 - Precision: 49% (out of all predictions where the model said that the user would churn out, 49% were correct)
 - At 0.5% threshold, this model has optimised results on recall, which is to identify as many churn users as possible as it is difficult to win back churned out users)
+# Fast API end point
+- https://churn-prediction-api-yjg8.onrender.com/predict
+- # One situation where model would fail
+  
