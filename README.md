@@ -1,2 +1,2 @@
 # churn-prediction-api
-Churn prediction API
+data set source: https://www.kaggle.com/code/bandiatindra/telecom-churn-prediction
